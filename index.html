@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myapp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-route.min.js"></script>
+    <title>Document</title>
+    <script src="3client.js"></script>
+</head>
+<body ng-controller="myctrl" style="background-image:url(back.jpg);">
+    <div>
+        <center>
+        <table border="2px" style="background-color: rgb(136, 184, 226);">
+            <tr>
+            <th style="font-family:Georgia, 'Times New Roman', Times, serif ;">ID</th>
+            <th style="font-family:Georgia, 'Times New Roman', Times, serif ;">Name</th>
+            <th style="font-family:Georgia, 'Times New Roman', Times, serif ;">Gender</th>
+            <th style="font-family:Georgia, 'Times New Roman', Times, serif ;">Email</th>
+            <th style="font-family:Georgia, 'Times New Roman', Times, serif ;" >Type</th>
+            <th style="font-family:Georgia, 'Times New Roman', Times, serif ;">Phone</th>
+            <th style="font-family:Georgia, 'Times New Roman', Times, serif ;">Amount</th>
+            </tr>
+
+            <tr ng-repeat="item in names">
+                <td style="font-family: 'Times New Roman', Times, serif">{{item.id}}</td>
+                <td style="font-family: 'Times New Roman', Times, serif">{{item.name}}</td>
+                <td style="font-family: 'Times New Roman', Times, serif">{{item.gender}}</td>
+                <td style="font-family: 'Times New Roman', Times, serif">{{item.email}}</td>
+                <td style="font-family: 'Times New Roman', Times, serif">{{item.type}}</td>
+                <td style="font-family: 'Times New Roman', Times, serif">{{item.phone}}</td>
+                <td style="font-family: 'Times New Roman', Times, serif">{{item.amount}}</td>
+            </tr>
+        </table>
+    </center> 
+    </div>
+    
+</body>
+</html>
